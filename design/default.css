@@ -1,0 +1,251 @@
+/* A mettre systématiquement */
+* {
+    box-sizing: border-box;
+ }
+
+body {
+    font-family: 'Roboto', 'sans serif';
+    background-color: #F4F7F6;
+    margin: 0;
+}
+
+header, section {
+    text-align: center;
+}
+
+header {
+    color: white;
+    background-color: #1D1D1D;
+    padding-bottom: 30px;
+}
+
+section {
+    margin-top: 50px;
+}
+
+nav {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 3px 1px -1px rgba(0,0,0,0.5);
+    font-size: 1.1em;
+    padding: 15px;
+}
+
+h1 {
+    font-family: 'theblacklist', 'Arial', 'sans serif';
+    letter-spacing: 0.1em;
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+h2 {
+    font-family: 'Open Sans', 'sans serif';
+    font-size: 1.5em;
+    margin: auto;
+}
+
+h3 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+h3::before {
+    content: '« ';
+    color: grey;
+}
+
+h3::after {
+    content: ' »';
+    color: grey;
+}
+
+ul {
+    padding: 0em;
+    display: inline;
+}
+
+li {
+    list-style-type: none;
+    margin: 10px;
+    display: inline;
+}
+
+li:hover {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    background-color: #1D1D1D;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.separator {
+    width: 40px;
+    height: 1px;
+    margin: 15px auto;
+    display: block;
+    background-color: #999;
+}
+
+#contact-paragraph {
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#contact {
+    padding: 30px;
+}
+
+#logo {
+    margin-top: 30px;
+    width: 50px;
+}
+
+#projets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projet {
+    width: 400px;
+    margin: 30px;
+    display: inline-block;
+    background: white;
+    padding-bottom: 15px;
+    border: 0px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.projet:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: 0.3s;
+}
+
+.date-projet {
+    font-size: 0.7em;
+}
+
+.projet span {
+    text-transform: uppercase;
+    display: block;
+}
+
+.projet img {
+    min-width: 400px;
+    height: 266px;
+}
+
+.picture {
+    width: 400px;
+    height: 266px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+#picture-project img, #picture-project video {
+    width: 80%;
+}
+
+/* Policies */
+@font-face {
+    font-family: 'theblacklist';
+    src: url('../src/theblacklist.ttf');
+}
+
+@media all and (max-width: 1000px) {
+	.projet { width: 100%; margin: 15px auto; }
+	.projet img { width: 100%; min-width: auto; height: auto; }
+	.projet .picture { width: 100%; height: auto; }
+    header h2 { width: 90%; }
+}
+
+
+/* Exo 1 :
+- OK Mettre l'écriture Roboto sinon sans-serif sur body 
+- OK Mettre l'écriture theblacklist sinon arial sinon sans-serif sur H1
+- OK Mettre l'écriture Open Sans sinon sans-serif sur H2
+- OK Mettre un padding 0 sur UL
+- OK Supprimer les listes à puces sur LI
+- OK Centrer tous les éléments du HEADER
+- OK Centrer tous les éléments des SECTIONS
+- OK Mettre un fond de couleur #F4F7F6 sur toute la page
+- OK Mettre une taille de 1.5em sur H3
+- OK Mettre un fond de couleur #1D1D1D sur HEADER
+- OK Mettre le texte du HEADER en blanc
+- OK Mettre une taille de 1.5em sur H2
+- OK Centrer la NAV
+- OK Mettre un fond de couleur blanc sur NAV
+- OK Mettre une ombre (0px 3px 1px -1px NOIR avec 0.5 rgba) sur NAV
+- OK Mettre une taille de 1.1 sur NAV
+- OK Mettre la police en gras au survol d'un élément du menu
+- OK Mettre un fond de couleur #1D1D1D sur footer
+- OK Mettre le texte du FOOTER en blanc
+- OK Centrer le footer */
+
+/* Exo 2 :
+HTML :
+- OK Créer un lien sur "Accueil" qui redirige sur index.html dans les fichiers index.html et firstproject.html
+- OK Créer un lien sur "Contact" et son ancre dans les fichiers index.html et firstproject.html
+CSS :
+- OK Mettre une bordure (1px solid black) et une bordure arrondie (15px) sur le paragraphe du contact
+- OK Retirer les liens des A et mettre le texte en noir */
+
+/* Exo 3 :
+- OK Mettre margin 0 sur body et margin-top 0 sur H1
+- OK Mettre padding-top 30px sur H1
+- OK Mettre margin auto sur le H2
+- OK Mettre margin-top 30px et width 50px sur logo
+- OK Mettre padding-bottom 30px sur header
+- OK Mettre un display inline sur UL pour supprimer toutes les marges
+- OK Mettre un padding de 5px sur nav
+- OK Mettre marge 10 px sur LI */
+
+/* Exo 4 :
+- OK Mettre un guillement avec before en utilisant Content
+    Before : «
+    After : »
+- OK Mettre la couleur des guillemets en gris
+- OK Mettre les titres H3 en majuscule */
+
+/* Exo 5 :
+- OK Modifier le padding de NAV à 15px
+- OK Ajouter un padding à FOOTER de 15px
+- OK Ajouter un padding de 30px à #Contact
+- OK Créer un span .separator entre H1 et H2 ayant :
+- OK Une largeur de 40px
+- OK Une hauteur de 1px;
+- OK une marge haut bas externe de 15px et gauche droite auto
+- OK un display de type block
+- OK un fond de couleur #999999
+- OK Créer une section entre la première et la deuxième
+- OK Mettre un H3 "Projets"
+- OK Créer le lien sur la barre de navigation avec une ancre */
+
+/* Exo 6
+- OK Dans #projets, faire un display flex et le wrapper, puis, faire un justify-content: space-arround
+- OK Dans la classe projet, mettre un width de 400px, une marge de 30px, un display inline-block, un fond blanc et un padding en bas de 15px
+- OK Toujours dans la classe projet, faire une bordure de 0px solid noir et faire un border radius de 10px ainsi qu'un overflow hidden
+- OK Dans la classe date-projet, mettre la taille à 0.7em
+- OK Dans le SPAN de la classe projet, mettre en majuscule et faire un display block
+- OK Dans les IMG de la classe projet, mettre un min-width de 400px et un height de 266px
+- OK Dans la classe picture, mettre un width de 400px, un height de 266px, mettre l'overflow à hidden et une marge en bas de 15px */
+
+/* Exo 7
+- OK Prendre la box shadow de la card-2 et l'appliquer sur la classe projet de notre solution
+- OK Prendre le hover de la card-1:hover et l'appliquer sur la classe projet hover de notre solution
+- OK Appliquer une transition de 0.3s sur le hover */
