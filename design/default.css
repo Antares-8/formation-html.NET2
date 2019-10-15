@@ -102,6 +102,7 @@ footer {
 #contact-paragraph {
     border: 1px solid black;
     border-radius: 15px;
+    padding: 30px;
 }
 
 #contact {
