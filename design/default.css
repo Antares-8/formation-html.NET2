@@ -114,11 +114,11 @@ footer {
     width: 50px;
 }
 
-#projets {
+/* #projets {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+} */
 
 .projet {
     width: 400px;
@@ -160,6 +160,10 @@ footer {
 
 #picture-project img, #picture-project video {
     width: 80%;
+}
+
+.btn-dark {
+    margin-top: 10px;
 }
 
 /* Policies */
