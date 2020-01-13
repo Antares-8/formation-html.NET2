@@ -79,6 +79,12 @@ a {
     color: black;
 }
 
+a:hover {
+    text-decoration: none;
+    color: black;
+
+}
+
 footer {
     background-color: #1D1D1D;
     color: white;
@@ -112,6 +118,11 @@ footer {
 #logo {
     margin-top: 30px;
     width: 50px;
+}
+
+#pokemon-img {
+    width: 50%;
+    margin-top: 1.5em;
 }
 
 /* #projets {
